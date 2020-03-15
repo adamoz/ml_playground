@@ -1,0 +1,13 @@
+name: pytorch_example
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.6
+  - pip:
+    - "--editable=git+https://github.com/oapio/bb-ml.git@master#egg=bbml" 
+    - torch==1.4.0
+    - torchvision==0.5.0
+    - mlflow>=1.0
+    - tensorboardX
+    - papermill
